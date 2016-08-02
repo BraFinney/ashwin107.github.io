@@ -1,0 +1,654 @@
+/*!
+ * Kohinoor Printers
+ * Designed by Betson George + Ashwin Ravichandran
+ * Developed by Ashwin Ravichandran
+ * Last Edit: August 1st, 2016
+ */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    background-image: url("../img/backgroundpattern.jpeg");
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #fed136;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #fed136;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #fed136;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-primary .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 10px 5px;
+    border-radius:2px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(0,204,214);
+    float: right;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #3e3e3e;
+    color: #fff;
+    background-color: rgb(0,204,214);
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fed136;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #797979;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 0px;
+} 
+.navbar-default .navbar-nav>.active>a:after
+{
+    content: url(../img/indicator_selection.PNG); 
+    display: block;
+    position: absolute;
+    left: 30px; /* change this value to one that suits you */
+    top: 0px; /* change this value to one that suits you */
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #363636;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #363636;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color:#363636;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .container{
+        padding-left: 245px;
+    }
+    .navbar-nav{
+        padding-top: 150px;
+        text-align: center;
+    }
+}
+/* w00t */
+section {
+    padding: 40px 0;
+    border-bottom: 2px solid #3e3e3e;
+}
+section .heading{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Cabin', sans-serif;
+    padding-bottom: 50px;
+    color: #363636;
+}
+section .white{
+    color: #fff;
+}
+section .heading .semibold{
+    font-weight: 600;
+    display: inline;
+}
+section .heading .italictext{
+    font-weight: 400 !important;
+    font-style: italic;
+    display: inline;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 45px 0px 150px 60px;
+    }
+}
+
+/* AboutUs Section */
+#aboutus{
+    background-image: url("../img/aboutusimage.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#aboutus .header{
+    background: rgba(0,204, 218,0.8);
+    box-shadow: 1px 1.732px 2px 2px rgb(0,0,0);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #E8E8E8;
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    padding: 10px;
+}
+#aboutus .header ul{
+    list-style: none;
+    padding: 10px 10px 0px 10px ;
+}
+#aboutus .header ul li{
+    display: inline;
+    padding: 0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+#aboutus .header ul li:hover{
+    font-weight: 800;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+#aboutus .header ul .activelink{
+    font-weight: 800;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+#aboutus .floatright{
+    float: right;
+    margin-right: 48px;
+}
+#aboutus .aboutusbox{
+    background: rgba(255,255,255,0.95);
+    padding: 50px 60px;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 13px;
+    line-height:30px;
+    font-weight:400;
+    text-align: center;
+}
+#aboutus .aboutusbox .boxheading{
+    font-size: 15px;
+    font-weight:800;
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#aboutus .aboutusbox hr{
+    border-width: 3px;
+    color: #000000;
+}
+/* AboutUs Section Ends*/
+
+/* General Heading Section */
+.headerbutton{
+    background: rgba(0,204, 218,0.8);
+    /*box-shadow: 1px 1.732px 2px 2px rgb(0,0,0);*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #040404;
+    line-height: 10px;
+    padding: 20px 60px;
+    position: relative;
+    bottom: 100px;
+    float:right;
+    text-transform: uppercase;
+}
+ .headerbutton i{
+    font-size: 16px;
+    border: 2px solid #000;
+    padding: 4px 7px;
+    border-radius: 50%;
+}
+ .headertext{
+    font-size:17.56px;
+    font-weight:100;
+    font-family: 'Raleway', sans-serif;
+    color: #212121;
+    line-height:24.56px;
+    margin-top: -50px;
+}
+.paddingtop20{
+    padding-top: 20px;
+}
+.imagefiller{
+    width: 120px;
+    height: 120px;
+    background: white;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    padding-bottom: 20px;
+}
+.imagetext{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    color: #212121;
+    size:13.78px;
+    line-height:19.69px;
+    padding: 20px 30px 0 30px;
+}
+/* General Heading Section Ends */
+
+/* Cliente Section*/
+#cliente figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    vertical-align: middle;
+}
+#cliente figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+#cliente .rowpullup{
+    margin-top: -30px;
+}
+
+#cliente .row{
+    padding-bottom: 30px;
+}
+/* Cliente Section Ends */
+
+/* NewsUpdates Section*/
+.newsupdate .imagefiller{
+    width: 120px !important;
+    height: 120px !important;
+    background: white;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding-bottom: 10px;
+}
+.newsupdate .imagetext{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    color: #212121;
+    size:13.78px;
+    line-height:16.69px;
+    padding: 5px 30px 5px 30px;
+}
+.newsupdate .imagetext1{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    color: #212121;
+    size:11.78px;
+    padding: 5px 30px 5px 30px;
+}
+/* NewsUpdates Section Ends*/
+
+/* Contact Section Stars*/
+#contact .columntext{
+    font-size: 14px;
+    color: #363636;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+#contact .columntextheading{
+    font-size:11px;
+    line-height: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #797979;
+    text-align:left;
+    padding-right: 20px;
+}
+#contact .wt700{
+    font-weight:700;
+    text-transform: UPPERCASE;
+}
+#contact .wt400{
+    font-weight:400;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    border-width:0px;
+    box-shadow: none;
+    border:none;
+    padding: 10px 10px 0px 10px;
+    border-bottom: 1px solid #3e3e3e;
+    background: transparent;
+}
+
+section#contact .form-group input.form-control {
+    border-width:0px;
+    box-shadow: none;
+    border:none;
+    height: auto;
+    border-bottom: 1px solid #3e3e3e;
+    background: transparent;
+}
+
+section#contact .form-group textarea.form-control {
+    border-width:0px;
+    box-shadow: none;
+    border:none;
+    height: 156px;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+section#contact .form-control:focus {
+    border-width:0px;
+    border:none;
+    box-shadow: none;
+    border-bottom: 1px solid #3e3e3e;
+    background: transparent;
+    outline: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #797979;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #797979;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #797979;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #fed136;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #f3f3f3;
+}
+
+::selection {
+    text-shadow: none;
+    background: #f3f3f3;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #f3f3f3;
+}
